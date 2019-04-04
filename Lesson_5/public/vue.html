@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Vue</title>
+  </head>
+  <body>
+    <div id="app" class="container">
+      
+          <div class="inputSearch">Поиск по сайту: <input type="text" style="width: 200px;" v-model="searchString" placeholder="Введите название товара" /></div>
+          
+          
+          <div class="catalog">
+            <div class="product" v-for="product in filteredProducts">
+
+         <div><img :src="product.img"></div>
+         
+          <h4 class="title">{{ product.title }}</h4>
+          <h2 class="price">${{ product.price }}</h2>
+          
+        </div> </div>
+        
+      
+      <button @click="handleButtonClick">ДОБАВИТЬ ТОВАР</button>
+      <button class="btnCart" @click="show = !show">{{ btnText }}</button>
+    <div class="cart" v-if="show">
+      
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

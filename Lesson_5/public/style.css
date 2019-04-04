@@ -1,0 +1,153 @@
+.item {
+    position: relative;
+    width: 263px;
+}
+.items {
+    max-width: 1140px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+ margin-left: 30px;
+    width: 845px;
+}
+
+.item {
+    height: 364px;
+    width: 261px;
+    margin: 0 0 40px;
+    position: relative;
+}
+
+.item img {
+    height: 280px;
+    width: 261px;
+}
+
+.item a {
+    text-decoration: none;
+}
+
+.product:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.item:hover item.img {
+    filter: brightness(50%);
+}
+
+.item-text {
+
+    padding: 20px 15px;
+}
+.product{
+	margin-top: 20px;
+}
+.item-text p {
+    
+   
+    color:
+        #222222;
+    font-size: 13px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+}
+
+.item-text h3 {
+       
+    color: #f16d7f;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    
+    
+}
+
+.item:hover .add {
+    display: block;
+}
+
+.item:hover {
+    
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+
+}
+
+.item-clear {
+    height: 0;
+    width: 261px;
+    margin-bottom: 0;
+}
+
+.price {
+     margin-top: 15px;
+     margin-left: 10px;
+
+    color:
+        #f16d7f;
+    font-size: 16px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+}
+
+.inputFilter {
+	width: 300px;
+	height: 30px;
+	float: left;
+
+}
+
+.catalog {
+	width:850px;
+	
+	margin: 0 auto;
+	
+	
+	
+}
+
+button {
+	margin-top: 20px;
+	width: 200px;
+	height: 40px;
+	border-radius: 15px;
+	
+}
+.cart {
+	margin-top: 20px;
+  width: 860px;
+  height: 400px;
+  background: antique;
+  border: 1px solid black;
+}
+
+.title {
+	margin-left: 10px;
+}
+.container{
+	width: 860px;
+	
+	margin: 0 auto;
+	
+}
+.inputSearch {
+	margin-top: 40px;
+	float:right;
+	margin-right: 5px;
+}
+#cart {
+	border: 1px solid black;
+	width:860px;
+	height: 400px;
+	background-color: pink;
+	display: none;
+}
+
+.catalog {
+	display: flex;
+	flex-wrap: wrap;
+justify-content: space-between;
+}	
+
+.btnCart {
+	float: right;
+}	
